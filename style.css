@@ -1,0 +1,118 @@
+/* ===== Reset พื้นฐาน ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===== ฟอนต์และพื้นฐาน ===== */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height:100vh;
+    transition:all 0.3s ease;
+}
+
+/* ===== Header ===== */
+header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:16px;
+    opacity:0.9;
+}
+
+/* ===== ปุ่มทั่วไป ===== */
+.btn,
+.open-btn,
+.download-btn{
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+.btn:hover,
+.open-btn:hover,
+.download-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* ===== ปุ่มกลับหน้าแรก ===== */
+.back{
+    display:block;
+    text-align:center;
+    margin:30px auto;
+    font-weight:bold;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.back:hover{
+    transform:translateX(-5px);
+}
+
+/* ===== การ์ดหนังสือ ===== */
+.book-card,
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:all 0.3s ease;
+}
+
+.book-card:hover,
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+}
+
+.book-card img,
+.card img{
+    width:100%;
+    object-fit:cover;
+}
+
+/* ===== Grid Layout ===== */
+.container,
+.menu-container{
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+    display:grid;
+    gap:30px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width:768px){
+    header h1{
+        font-size:24px;
+    }
+
+    header p{
+        font-size:14px;
+    }
+}
+
+/* ===== Scrollbar สวยขึ้น (Chrome) ===== */
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#888;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#555;
+}
